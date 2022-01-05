@@ -1,9 +1,13 @@
 #include <stdio.h>
-int main(){
-    int i;
-    for (i = 1; i < 11; ++i)
-    {
-        printf("%d ", i);
-    }
-    return 0;
+#include <string.h>
+
+struct Customer {
+	char* name;
+	double budget;	
+};		
+	
+int main(void)
+{
+	struct Customer John = { "John", 100.0 };
+	return 0;
 }
